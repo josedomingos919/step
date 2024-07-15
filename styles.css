@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.step {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.step p span {
+    position: absolute;
+    margin-bottom: -25px;
+}
+
+.step p {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.step div {
+    flex: 1;
+    height: 5px;
+    background-color: #d3d3d3;
+}
+
+.step p.active {
+    background-color: black;
+}
+
+.step div.active + p + div::before {
+    display: flex;
+    content: " ";
+    width: 50%;
+    height: 5px;
+    background-color: black !important;
+}
+
+.step div.active {
+    background-color: black;
+}
+
+.step div.active + p {
+    background-color: black;
+}
+
+.step div:first-child {
+    display: none;
+}
