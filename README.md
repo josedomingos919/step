@@ -10,3 +10,5 @@ Olá esse projecto é algo bem simples que eu crie, é um componente **step** pa
     4. Prontos!
 
 **Imagem**
+
+![Screenshot (112)](https://github.com/user-attachments/assets/15117cc6-4b98-4f3e-8485-3018d245fe64)
